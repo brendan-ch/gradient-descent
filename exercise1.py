@@ -20,12 +20,12 @@ max_F = lambda x, y : (F_X(x, y) * LEARN_RATE, F_Y(x, y) * LEARN_RATE)
 guess = INITIAL_GUESS
 
 i = 0
-step_size = (float('inf'), float('inf'))
-while i < CYCLES and np.abs(step_size[0]) >= LEARN_RATE and np.abs(step_size[1]) >= LEARN_RATE:
-  step_size = min_F(guess[0], guess[1])
-  # print(step_size)
+step_sizes = (float('inf'), float('inf'))
+while i < CYCLES and np.abs(step_sizes[0]) >= LEARN_RATE and np.abs(step_sizes[1]) >= LEARN_RATE:
+  step_sizes = min_F(guess[0], guess[1])
+  # print(step_sizes)
 
-  guess = (guess[0] + step_size[0], guess[1] + step_size[1])
+  guess = (guess[0] + step_sizes[0], guess[1] + step_sizes[1])
   i += 1
   
 print(guess)
