@@ -1,4 +1,4 @@
-# Gradient Descent Implementations
+# Gradient Descent Algorithm
 
 
 
@@ -37,3 +37,5 @@ python exercise3.py
 ## Exercise 1
 
 In my testing, the final guess ends with something close to `(-0.8962922428213529, 0.14270553189951954)`. Plotted on a graph:
+
+<img width="1024" alt="Math3D scene with given function and point" src="https://github.com/brendan-ch/gradient-descent/assets/34608561/db12af79-8ccd-4408-962f-2fb9de4c7f05">
