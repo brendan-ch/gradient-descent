@@ -29,3 +29,4 @@ while i < CYCLES and np.abs(step_sizes[0]) >= LEARN_RATE and np.abs(step_sizes[1
   i += 1
   
 print(guess)
+print(f"Cycle count: {i}")
