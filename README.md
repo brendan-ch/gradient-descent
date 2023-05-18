@@ -25,10 +25,6 @@ python exercise2.py
 python exercise3.py
 ```
 
-# How it works
-
-
-
 # Notes
 
 ## Exercise 1
