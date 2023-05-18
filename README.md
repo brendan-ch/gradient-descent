@@ -39,7 +39,7 @@ F_Y = lambda x, y : (2 * y) + (10 * x) * np.cos(10 * y)
 
 With `LEARN_RATE` set to `0.00001`, the final guess ends with something close to `(-0.8962922428213529, 0.14270553189951954)`. Plotted on a graph:
 
-<img width="974" alt="Math3D scene with a local minimum" src="https://github.com/brendan-ch/gradient-descent/assets/34608561/fca3fdda-293f-45d0-95cd-daf39a12b447">
+<img width="974" alt="Math3D scene with a local minimum" src="https://github.com/brendan-ch/gradient-descent/assets/34608561/f33f278c-3ec4-4562-bf61-cf8baf6a29e2">
 
 [See full Math3D scene](https://www.math3d.org/qrkeSXBDy)
 
@@ -110,6 +110,6 @@ while i < SWEEP_CYCLES and min_point != prev_min_point:
 
 Doing this resulted in the point `(0.8962922428272383, -0.14270553184258455)`, which is the global minimum:
 
-<img width="974" alt="Math3D scene with the global minimum" src="https://github.com/brendan-ch/gradient-descent/assets/34608561/4c5ff29c-a2e2-4f1a-8b53-88792c4a7ff7">
+<img width="974" alt="Math3D scene for the absolute minimum" src="https://github.com/brendan-ch/gradient-descent/assets/34608561/38bc9da3-2ef5-4de2-a8f1-263d50efa312">
 
 [See full Math3D scene](https://www.math3d.org/2Y6t1kpA8)
