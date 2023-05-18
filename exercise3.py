@@ -4,8 +4,8 @@ import numpy as np
 INITIAL_GUESS = (2, 3)  # initial guess as stated by the exercise
 CYCLES = 10000  # maximum computational cycles
 LEARN_RATE = 0.00001  # the learning rate, indicated by epsilon in problem
-H = 0.00001
-RANGE = 2
+H = 0.00001  # differential quotient; smaller is more accurate
+RANGE = 2  # range of neighboring points to check after the initial point
 
 # Original function
 # Change as needed
