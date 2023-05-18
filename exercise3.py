@@ -34,14 +34,18 @@ def descend(initial_guess):
   return guess
 
 min_point = descend(INITIAL_GUESS)
+prev_min_point = (0, 0)
 min_value = F(min_point[0], min_point[1])
 
 # Get the neighboring points
-for x in range(int(np.round(min_point[0] - RANGE)), int(np.round(min_point[0] + RANGE))):
-  for y in range(int(np.round(min_point[1] - RANGE)), int(np.round(min_point[1] + RANGE))):
-    guess = descend((x, y))
-    if F(guess[0], guess[1]) < min_value:
-      min_point = guess
-      min_value = F(guess[0], guess[1])
+while (min_point != prev_min_point):
+  prev_min_point = min_point
+  for x in range(int(np.round(min_point[0] - RANGE)), int(np.round(min_point[0] + RANGE))):
+    for y in range(int(np.round(min_point[1] - RANGE)), int(np.round(min_point[1] + RANGE))):
+      guess = descend((x, y))
+      if F(guess[0], guess[1]) < min_value:
+        min_point = guess
+        min_value = F(guess[0], guess[1])
+  
 
 print(min_point)
