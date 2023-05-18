@@ -46,14 +46,17 @@ min_value = F(min_point[0], min_point[1])  # Calculate the minimum value at the 
 i = 0
 while i < SWEEP_CYCLES and min_point != prev_min_point:
   prev_min_point = min_point
+  # Round to nearest whole number to make it work with range
   for x in range(int(np.round(min_point[0] - RANGE)), int(np.round(min_point[0] + RANGE))):
     for y in range(int(np.round(min_point[1] - RANGE)), int(np.round(min_point[1] + RANGE))):
+      # Update the guess
       guess = descend((x, y))
+
+      # Replace the minimum point if minimum value is less
       if F(guess[0], guess[1]) < min_value:
         min_point = guess
         min_value = F(guess[0], guess[1])
 
   i += 1
-  
 
 print(min_point)
